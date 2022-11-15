@@ -1,10 +1,9 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
+# Translated with React App TRY IT OUT
+English 🇺🇸
+        Arabic🇦🇪🇸🇦
+                Spanish 🇲🇽
+                        French🇫🇷
+## Languages Include ⬆️
 
 ### `npm start`
 

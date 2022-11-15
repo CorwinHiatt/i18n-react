@@ -1,21 +1,36 @@
-import { useState } from 'react';
+import { useState, createContext } from 'react';
 import Spanish from './lang/es.json'
+import French from './lang/en.json'
+import Arabic from './lang/ar.json'
 import English from './lang/en.json'
+import Details from './components/Details';
 import './App.css';
 
 const locale = navigator.language || 'en';
 
-const _lang = (locale==='es') ? Spanish : English;
+const _lang = (locale==='es') 
+                ? Spanish 
+                :(locale==='fr')
+                ? French
+                :(locale==='ar')
+                ? Arabic
+                : English
+
+export const LanguageContext = createContext()
 
 function App() {
   const [lang, setLang] = useState(_lang);
 
   return (
+    <LanguageContext.Provider value={{lang, default: English}}>
+      
     <div className="App">
       <header className="App-header">
         <div>
-          <button onClick={() => setLang(English)}>EN</button>
-          <button onClick={() => setLang(Spanish)}>ES</button>
+          <button className='but' onClick={() => setLang(English)}>EN</button>
+          <button className='but' onClick={() => setLang(Spanish)}>ES</button>
+          <button className='but' onClick={() => setLang(French)}>FR</button>
+          <button className='but' onClick={() => setLang(Arabic)}>AR</button>
         </div>
        <h1>{lang["app.header"]}</h1>
         <p>{lang["app.subhead"]}</p>
@@ -27,9 +42,10 @@ function App() {
         >
          {lang["app.cta"]}
         </a>
-        
+        <Details/>
       </header>
     </div>
+    </LanguageContext.Provider>
   );
 }
 
