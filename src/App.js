@@ -1,6 +1,6 @@
 import { useState, createContext } from 'react';
 import Spanish from './lang/es.json'
-import French from './lang/en.json'
+import French from './lang/fr.json'
 import Arabic from './lang/ar.json'
 import English from './lang/en.json'
 import Details from './components/Details';
