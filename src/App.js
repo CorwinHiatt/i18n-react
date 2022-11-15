@@ -27,10 +27,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div>
-          <button className='but' onClick={() => setLang(English)}>EN</button>
-          <button className='but' onClick={() => setLang(Spanish)}>ES</button>
-          <button className='but' onClick={() => setLang(French)}>FR</button>
-          <button className='but' onClick={() => setLang(Arabic)}>AR</button>
+          <button className='but' onClick={() => setLang(English)}>English 🇺🇸</button>
+          <button className='but' onClick={() => setLang(Spanish)}> Spanish 🇲🇽🇪🇸🇵🇷</button>
+          <button className='but' onClick={() => setLang(French)}> French🇫🇷🗼🇭🇹</button>
+          <button className='but' onClick={() => setLang(Arabic)}>Arabic🇦🇪🇸🇦🇪🇬</button>
         </div>
        <h1>{lang["app.header"]}</h1>
         <p>{lang["app.subhead"]}</p>

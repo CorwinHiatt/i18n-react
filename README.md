@@ -1,8 +1,8 @@
 # Translated with React App TRY IT OUT
 English 🇺🇸
-        Arabic🇦🇪🇸🇦
-                Spanish 🇲🇽
-                        French🇫🇷
+        Arabic🇦🇪🇸🇦🇪🇬
+                Spanish 🇲🇽🇪🇸🇵🇷
+                        French🇫🇷🗼🇭🇹
 ## Languages Include ⬆️
 
 ### `npm start`
